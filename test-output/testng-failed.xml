@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [phoneCall.apk]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DailPadPage(failed)">
+    <classes>
+      <class name="Tests.DailPadTest">
+        <methods>
+          <include name="openDialPadeOptionTest"/>
+        </methods>
+      </class> <!-- Tests.DailPadTest -->
+    </classes>
+  </test> <!-- DailPadPage(failed) -->
+</suite> <!-- Failed suite [phoneCall.apk] -->
