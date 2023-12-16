@@ -6,6 +6,10 @@
       <class name="Tests.DailPadTest">
         <methods>
           <include name="openDialPadeOptionTest"/>
+          <include name="report"/>
+          <include name="closeApp"/>
+          <include name="start"/>
+          <include name="setAndroiDriver"/>
         </methods>
       </class> <!-- Tests.DailPadTest -->
     </classes>

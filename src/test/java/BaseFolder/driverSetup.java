@@ -16,7 +16,6 @@ private static final ThreadLocal<AndroidDriver>  LOCAL_DRIVER = new ThreadLocal<
 		driverSetup.LOCAL_DRIVER.set(driver);
 	}
 	
-	
 	public static AndroidDriver getDriver() throws MalformedURLException {
 	    return LOCAL_DRIVER.get();
 	}
@@ -38,5 +37,9 @@ private static final ThreadLocal<AndroidDriver>  LOCAL_DRIVER = new ThreadLocal<
 		LOCAL_DRIVER.set(driver);
 	}
 	
+	@AfterSuite
+	public void closeApp() throws MalformedURLException {
+		getDriver().quit();
+	}
 	
 }

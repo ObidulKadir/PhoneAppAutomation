@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T15:37:29 BDT" name="phoneCall.apk" finished-at="2023-12-16T15:37:29 BDT" duration-ms="225">
+  <suite started-at="2023-12-16T16:36:22 BDT" name="phoneCall.apk" finished-at="2023-12-16T16:37:20 BDT" duration-ms="58331">
     <groups>
     </groups>
-    <test started-at="2023-12-16T15:37:29 BDT" name="DailPadPage" finished-at="2023-12-16T15:37:29 BDT" duration-ms="225">
+    <test started-at="2023-12-16T16:36:22 BDT" name="DailPadPage" finished-at="2023-12-16T16:37:20 BDT" duration-ms="58331">
       <class name="Tests.DailPadTest">
-        <test-method is-config="true" signature="setAndroiDriver()[pri:0, instance:Tests.DailPadTest@1a75e76a]" started-at="2023-12-16T15:37:20 BDT" name="setAndroiDriver" finished-at="2023-12-16T15:37:29 BDT" duration-ms="8968" status="PASS">
+        <test-method is-config="true" signature="setAndroiDriver()[pri:0, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:36:15 BDT" name="setAndroiDriver" finished-at="2023-12-16T16:36:22 BDT" duration-ms="6881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setAndroiDriver -->
-        <test-method signature="openDialPadeOptionTest()[pri:0, instance:Tests.DailPadTest@1a75e76a]" started-at="2023-12-16T15:37:29 BDT" name="openDialPadeOptionTest" finished-at="2023-12-16T15:37:29 BDT" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:36:22 BDT" name="start" finished-at="2023-12-16T16:36:22 BDT" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="openDialPadeOptionTest()[pri:0, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:36:22 BDT" name="openDialPadeOptionTest" finished-at="2023-12-16T16:36:26 BDT" duration-ms="4216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDialPadeOptionTest -->
+        <test-method signature="dialNumberTest()[pri:1, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:36:26 BDT" name="dialNumberTest" finished-at="2023-12-16T16:37:16 BDT" duration-ms="49664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dialNumberTest -->
+        <test-method signature="callTheNumberTest()[pri:2, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:37:16 BDT" name="callTheNumberTest" finished-at="2023-12-16T16:37:20 BDT" duration-ms="3511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callTheNumberTest -->
+        <test-method is-config="true" signature="report()[pri:0, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:37:20 BDT" name="report" finished-at="2023-12-16T16:37:20 BDT" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.DailPadTest@2767e23c]" started-at="2023-12-16T16:37:20 BDT" name="closeApp" finished-at="2023-12-16T16:37:21 BDT" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
       </class> <!-- Tests.DailPadTest -->
     </test> <!-- DailPadPage -->
   </suite> <!-- phoneCall.apk -->
