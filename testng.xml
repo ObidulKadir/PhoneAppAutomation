@@ -7,4 +7,9 @@
 			<class name="Tests.DailPadTest" />
 		</classes>
 	</test>	
+	<test name="incallTest">
+		<classes>
+			<class name="Tests.CallingPageTest" />
+		</classes>
+	</test>	
 </suite>

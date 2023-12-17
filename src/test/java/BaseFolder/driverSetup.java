@@ -38,8 +38,15 @@ private static final ThreadLocal<AndroidDriver>  LOCAL_DRIVER = new ThreadLocal<
 	}
 	
 	@AfterSuite
-	public void closeApp() throws MalformedURLException {
-		getDriver().quit();
+	public void closeApp() {
+	    System.out.println("Closing the app...");
+	    try {
+	        getDriver().quit();
+	        System.out.println("App closed successfully.");
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
 	}
+
 	
 }

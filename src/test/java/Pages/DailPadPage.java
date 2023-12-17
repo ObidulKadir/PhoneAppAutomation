@@ -116,49 +116,42 @@ public class DailPadPage extends BasePage{
 		}
 		try {
 			clickOnElement(six);
-			sleepTime();
 			passCaseWithSC("six option is selected properly.", "sixPass");
 		} catch (Exception e) {
 			failCase("six element is unable to locate.", "sixFail");
 		}
 		try {
 			clickOnElement(two);
-			sleepTime();
 			passCaseWithSC("two option is selected properly.", "twoPass");
 		} catch (Exception e) {
 			failCase("two element is unable to locate.", "twoFail");
 		}
 		try {
 			clickOnElement(three);
-			sleepTime();
 			passCaseWithSC("three option is selected properly.", "threePass");
 		} catch (Exception e) {
 			failCase("three element is unable to locate.", "threeFail");
 		}
 		try {
 			clickOnElement(four);
-			sleepTime();
 			passCaseWithSC("four option is selected properly.", "fourPass");
 		} catch (Exception e) {
 			failCase("four element is unable to locate.", "fourFail");
 		}
 		try {
 			clickOnElement(eight);
-			sleepTime();
 			passCaseWithSC("eight option is selected properly.", "eightPass");
 		} catch (Exception e) {
 			failCase("eight element is unable to locate.", "eightFail");
 		}
 		try {
 			clickOnElement(seven);
-			sleepTime();
 			passCaseWithSC("seven option is selected properly.", "sevenPass");
 		} catch (Exception e) {
 			failCase("seven element is unable to locate.", "sevenFail");
 		}
 		try {
 			clickOnElement(zero);
-			sleepTime();
 			passCaseWithSC("Zero option is selected properly.", "zeroPass");
 		} catch (Exception e) {
 			failCase("zero element is unable to locate.", "ZeroFail");
@@ -166,21 +159,18 @@ public class DailPadPage extends BasePage{
 		
 		try {
 			clickOnElement(four);
-			sleepTime();
 			passCaseWithSC("four option is selected properly.", "fourPass");
 		} catch (Exception e) {
 			failCase("four element is unable to locate.", "fourFail");
 		}
 		try {
 			clickOnElement(eight);
-			sleepTime();
 			passCaseWithSC("eight option is selected properly.", "eightPass");
 		} catch (Exception e) {
 			failCase("eight element is unable to locate.", "eightFail");
 		}
 		try {
 			clickOnElement(seven);
-			sleepTime();
 			passCaseWithSC("seven option is selected properly.", "sevenPass");
 		} catch (Exception e) {
 			failCase("seven element is unable to locate.", "sevenFail");
