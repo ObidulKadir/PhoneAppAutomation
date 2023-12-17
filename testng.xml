@@ -18,4 +18,9 @@
 			<class name="Tests.RecentsPageTest" />
 		</classes>
 	</test>	
+	<test name="ContactsPageTest">
+		<classes>
+			<class name="Tests.ContactsPageTest" />
+		</classes>
+	</test>
 </suite>

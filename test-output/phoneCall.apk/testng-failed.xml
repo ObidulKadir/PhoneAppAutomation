@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [phoneCall.apk]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="incallTest(failed)">
+  <test thread-count="5" name="RecentsPageTest(failed)">
     <classes>
-      <class name="Tests.CallingPageTest">
+      <class name="Tests.RecentsPageTest">
         <methods>
-          <include name="speakerTest"/>
+          <include name="report"/>
           <include name="closeApp"/>
-          <include name="unmuteTest"/>
+          <include name="traverseContactPage"/>
           <include name="setAndroiDriver"/>
-          <include name="endCallTest"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- Tests.CallingPageTest -->
+      </class> <!-- Tests.RecentsPageTest -->
     </classes>
-  </test> <!-- incallTest(failed) -->
+  </test> <!-- RecentsPageTest(failed) -->
+  <test thread-count="5" name="ContactsPageTest(failed)">
+    <classes>
+      <class name="Tests.ContactsPageTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="createAnewContact"/>
+          <include name="recentCallLogTest"/>
+          <include name="deleteTheContact"/>
+          <include name="updateTheContact"/>
+          <include name="setAndroiDriver"/>
+          <include name="report"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- Tests.ContactsPageTest -->
+    </classes>
+  </test> <!-- ContactsPageTest(failed) -->
 </suite> <!-- Failed suite [phoneCall.apk] -->

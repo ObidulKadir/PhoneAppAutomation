@@ -56,8 +56,23 @@ public class RecentsPage extends BasePage{
 	@FindBy(xpath="//android.widget.TextView[@resource-id='com.android.dialer:id/name']")
 	WebElement clickOntheContact;
 
-	@FindBy(xpath="//android.widget.TextView[@text='Create new contact']")
-	WebElement selectCreateNewContact;
+	@FindBy(xpath="//android.widget.TextView[@text='Block number']")
+	WebElement blockNumber;
+
+	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button1']")
+	WebElement ConfirmBlockButton;
+
+	@FindBy(xpath="//android.widget.TextView[@text='Unblock number']")
+	WebElement unBlockNumber;
+
+	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button1']")
+	WebElement confirmUnBlockNumber;
+
+	@FindBy(xpath="//android.widget.TextView[@text='Call details']")
+	WebElement callDetailsButton;
+
+	@FindBy(xpath="//android.widget.TextView[@resource-id=\"com.android.dialer:id/call_detail_action_delete\"]")
+	WebElement deleteNumber;
 	
 	public void recentCallLogFunctionality() throws IOException {
 		test.info("Click on the recentCallLog button.");
@@ -79,14 +94,79 @@ public class RecentsPage extends BasePage{
 		}
 	}
 	
-	public void createNewContact() throws IOException {
-		test.info("Click on the CreateNewContact button.");
+	public void blockTheNumber() throws IOException {
+		test.info("Click on the blockNumber button.");
 		try {
-			clickOnElement(selectCreateNewContact);
+			clickOnElement(blockNumber);
 			sleepTime();
-			passCaseWithSC("Clicked on the selectCreateNewContact", "selectCreateNewContactPass");
+			passCaseWithSC("Clicked on the blockNumber", "blockNumberPass");
 		} catch (Exception e) {
-			failCase("selectCreateNewContact element is unable to locate.", "selectCreateNewContactFail");
+			failCase("blockNumber element is unable to locate.", "blockNumberFail");
+		}
+		
+		test.info("Click on the confirmbutton to block the number.");
+		try {
+			clickOnElement(ConfirmBlockButton);
+			sleepTime();
+			passCaseWithSC("Clicked on the confirm button.", "confirmUnBlockNumberPass");
+		} catch (Exception e) {
+			failCase("confirmUnBlockNumber element is unable to locate.", "confirmUnBlockNumberFail");
+		}
+	}
+	
+	public void unBlockTheNumber() throws IOException {
+		test.info("Click on the unblock button.");
+		try {
+			clickOnElement(unBlockNumber);
+			sleepTime();
+			passCaseWithSC("Clicked on the unBlockNumber", "unBlockNumberPass");
+		} catch (Exception e) {
+			failCase("unBlockNumber element is unable to locate.", "unBlockNumberFail");
+		}
+		
+		test.info("Clicked on the unconfirm button to unblock number.");
+		try {
+			clickOnElement(confirmUnBlockNumber);
+			sleepTime();
+			passCaseWithSC("Clicked on the confirm button.", "confirmUnBlockNumberPass");
+		} catch (Exception e) {
+			failCase("confirmUnBlockNumber element is unable to locate.", "confirmUnBlockNumberFail");
+		}
+	}
+	
+	public void callDetails() throws IOException {
+		test.info("Click on the call details options.");
+		try {
+			clickOnElement(callDetailsButton);
+			sleepTime();
+			passCaseWithSC("Clicked on the callDetailsButton", "callDetailsButtonPass");
+		} catch (Exception e) {
+			failCase("callDetailsButton element is unable to locate.", "callDetailsButtonFail");
+		}
+		
+	}
+	
+	public void deleteTheNumber() throws IOException {
+		test.info("Click on the delete button.");
+		try {
+			clickOnElement(deleteNumber);
+			sleepTime();
+			passCaseWithSC("Clicked on the deleteNumber", "deleteNumberPass");
+		} catch (Exception e) {
+			failCase("deleteNumber element is unable to locate.", "deleteNumberFail");
+		}
+	}
+	@FindBy(xpath="//android.widget.TextView[@resource-id='com.android.dialer:id/bottom_nav_item_text' and @text='Contacts']")
+	WebElement contactsPage;
+	
+	public void traverseContactPage() throws IOException {
+		test.info("Click on the contacts button.");
+		try {
+			clickOnElement(contactsPage);
+			sleepTime();
+			passCaseWithSC("Clicked on the contactsPage", "contactsPagePass");
+		} catch (Exception e) {
+			failCase("contactsPage element is unable to locate.", "contactsPageFail");
 		}
 	}
 	
