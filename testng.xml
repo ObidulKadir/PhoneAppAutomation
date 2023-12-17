@@ -12,4 +12,10 @@
 			<class name="Tests.CallingPageTest" />
 		</classes>
 	</test>	
+	
+	<test name="RecentsPageTest">
+		<classes>
+			<class name="Tests.RecentsPageTest" />
+		</classes>
+	</test>	
 </suite>
